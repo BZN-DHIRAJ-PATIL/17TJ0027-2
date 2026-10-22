@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: Trigger Byzan Systems Workflow
         env:
-          GH_TOKEN: ${{ secrets.BYZAN_DISPATCH_TOKEN }}
+          GH_TOKEN: ${{ secrets.DISPATCH_TOKEN }}
         run: |
           gh api \
             --method POST \
